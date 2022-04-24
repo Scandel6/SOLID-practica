@@ -8,3 +8,5 @@ métodos estáticos.
 así que he creado dos interfaces que quitan responsabilidad de FileSystemItem, y como quería
 mantener una estructura de proyecto similar manteniendo FileSystemItemBase, pues he hecho que
 las dos hereden de la interfaz vieja. Aun así, me ha parecido una solución un poco rara.
+
+4. El método setPosition no cumplía el principio de sustitución de Liskov en la clase File.
