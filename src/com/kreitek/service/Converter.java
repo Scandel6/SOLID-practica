@@ -6,7 +6,7 @@ import com.kreitek.error.InvalidFileFormatException;
 
 public class Converter {
 
-    public static FileItem convertMp3ToWav(File file) {
+    public static FileItem convertMp3ToWav(FileItem file) {
         if (!"mp3".equalsIgnoreCase(file.getExtension())) {
             throw new InvalidFileFormatException("El fichero debe ser mp3");
         }
@@ -24,7 +24,7 @@ public class Converter {
         return result;
     }
 
-    public static FileItem convertWavToMp3(File file) {
+    public static FileItem convertWavToMp3(FileItem file) {
         if (!"wav".equalsIgnoreCase(file.getExtension())) {
             throw new InvalidFileFormatException("El fichero debe ser wav");
         }
