@@ -4,3 +4,7 @@
 convertWavToMp3 y convertMp3ToWav, así que los he extraido a la clase Converter como
 métodos estáticos.
 
+3. En las clases Directory y File se incumple el principio de Segregación de interfaces,
+así que he creado dos interfaces que quitan responsabilidad de FileSystemItem, y como quería
+mantener una estructura de proyecto similar manteniendo FileSystemItemBase, pues he hecho que
+las dos hereden de la interfaz vieja. Aun así, me ha parecido una solución un poco rara.

@@ -1,17 +1,18 @@
 package com.kreitek.files;
 
-import com.kreitek.files.error.InvalidFileFormatException;
-import com.kreitek.service.Converter;
+import com.kreitek.filesInterfaces.DirectoryItem;
+import com.kreitek.filesInterfaces.FileItem;
+import com.kreitek.filesInterfaces.FileSystemItem;
 
 import java.util.List;
 
-public  class File extends FileSystemItemBase implements FileSystemItem {
+public  class File extends FileSystemItemBase implements FileItem {
 
     private int size = 0;
     private boolean isOpen = false;
     private int position = 0;
 
-    public File(FileSystemItem parent, String name) {
+    public File(DirectoryItem parent, String name) {
         super(parent, name);
     }
 
@@ -23,21 +24,6 @@ public  class File extends FileSystemItemBase implements FileSystemItem {
             extension = getName().substring(indexOfLastDot + 1);
         }
         return extension;
-    }
-
-    @Override
-    public List<FileSystemItem> listFiles() {
-        throw new UnsupportedOperationException("No es válido para ficheros");
-    }
-
-    @Override
-    public void addFile(FileSystemItem file) {
-        throw new UnsupportedOperationException("No es válido para ficheros");
-    }
-
-    @Override
-    public void removeFile(FileSystemItem file) {
-        throw new UnsupportedOperationException("No es válido para ficheros");
     }
 
     @Override
