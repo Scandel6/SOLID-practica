@@ -1,1 +1,6 @@
-En la clase FileManager se incumple el principio Abierto Cerrado
+1. En la clase FileManager se incumple el principio Abierto Cerrado.
+
+2. En la clase File se incumple el principio de Responsabilidad Única en los métodos
+convertWavToMp3 y convertMp3ToWav, así que los he extraido a la clase Converter como
+métodos estáticos.
+
