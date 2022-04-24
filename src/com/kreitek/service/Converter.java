@@ -1,10 +1,8 @@
 package com.kreitek.service;
 
 import com.kreitek.files.File;
-import com.kreitek.filesInterfaces.DirectoryItem;
 import com.kreitek.filesInterfaces.FileItem;
-import com.kreitek.filesInterfaces.FileSystemItem;
-import com.kreitek.files.error.InvalidFileFormatException;
+import com.kreitek.error.InvalidFileFormatException;
 
 public class Converter {
 
