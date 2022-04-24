@@ -1,0 +1,1 @@
+En la clase FileManager se incumple el principio Abierto Cerrado
